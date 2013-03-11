@@ -64,7 +64,7 @@ public class Generator {
 		};
 		
 		for (File file : templateDir.listFiles(filter)) {
-			buffer.append(file.getName());
+			buffer.append("\n" + file.getName());
 		}
 	}
 
