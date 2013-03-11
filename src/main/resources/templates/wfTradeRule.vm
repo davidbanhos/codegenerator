@@ -1,0 +1,45 @@
+#set( $class_name = $rule_name + "TradeRule" )
+package calypsox.tk.bo.workflow.rule;
+
+import java.util.Vector;
+
+import com.calypso.tk.bo.Task;
+import com.calypso.tk.bo.TaskWorkflowConfig;
+import com.calypso.tk.bo.workflow.WfTradeRule;
+import com.calypso.tk.core.Trade;
+import com.calypso.tk.service.DSConnection;
+
+public class $class_name implements WfTradeRule {
+
+    public boolean check (TaskWorkflowConfig wc,
+              Trade trade,
+              Trade oldTrade,
+              Vector messages,
+              DSConnection dsCon,
+              Vector excps,
+              Task task,
+              Object dbCon,
+              Vector events) {
+		// TODO Auto-generated method stub
+		return false;
+    }
+
+    public String getDescription() {
+		// TODO Auto-generated method stub
+		return "$rule_name";
+    }
+
+     public boolean update (TaskWorkflowConfig wc,
+               Trade trade,
+               Trade oldTrade,
+               Vector messages,
+               DSConnection dsCon,
+               Vector excps,
+               Task task,
+               Object dbCon,
+               Vector events) {
+		// TODO Auto-generated method stub
+		return false;
+    }
+
+}

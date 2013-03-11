@@ -1,0 +1,51 @@
+#set( $class_name = $rule_name + "MessageRule" )
+package calypsox.tk.bo.workflow.rule;
+
+import java.util.Vector;
+
+import com.calypso.tk.bo.BOMessage;
+import com.calypso.tk.bo.BOTransfer;
+import com.calypso.tk.bo.Task;
+import com.calypso.tk.bo.TaskWorkflowConfig;
+import com.calypso.tk.bo.workflow.WfMessageRule;
+import com.calypso.tk.core.Trade;
+import com.calypso.tk.service.DSConnection;
+
+public class $class_name implements WfMessageRule {
+
+    public boolean check (TaskWorkflowConfig wc,
+			  BOMessage message,
+			  BOMessage oldMessage,
+			  Trade      trade,
+			  BOTransfer transfer,
+			  Vector messages,
+			  DSConnection dsCon,
+			  Vector excps,
+			  Task task,
+			  Object dbCon,
+			  Vector events) {
+		// TODO Auto-generated method stub
+		return false;
+    }
+
+    public String getDescription() {
+		// TODO Auto-generated method stub
+		return "$class_name, description has to be implemented.";
+    }
+
+    public boolean update (TaskWorkflowConfig wc,
+			  BOMessage message,
+			  BOMessage oldMessage,
+			  Trade      trade,
+			  BOTransfer transfer,
+			  Vector messages,
+			  DSConnection dsCon,
+			  Vector excps,
+			  Task task,
+			  Object dbCon,
+			  Vector events) {
+		// TODO Auto-generated method stub
+		return false;
+    }
+
+}
